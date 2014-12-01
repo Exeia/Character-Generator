@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'static_pages#home'	
+  root 'static_pages#thome'	
   get 'static_pages/about'
   
   # The priority is based upon order of creation: first created -> highest priority.
