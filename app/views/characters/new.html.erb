@@ -1,2 +1,18 @@
-<h1>Characters#new</h1>
-<p>Find me in app/views/characters/new.html.erb</p>
+<%provide(:title, 'New Character') %>
+
+<h1 text-align="center">New Character</h1> 
+
+<div class="row"> 
+    <div class="col-md-6">
+        <%=form_for @character do |f|%>
+            <%= f.label :name, "Character Name" %>
+            <%= f.text_field :name %>
+
+            <%= f.label :job, "Select a Class: " %>
+            <%= f.select :job, options_for_select([["Select one",""], "Rogue", "Mage", "Warrior", "Ranger"])%>
+
+            <%= f.submit "Create Character", class: "btn" %>
+
+        <% end %>
+    </div>
+</div>

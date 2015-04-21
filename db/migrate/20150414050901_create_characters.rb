@@ -8,4 +8,5 @@ class CreateCharacters < ActiveRecord::Migration
       t.timestamps
     end
   end
+  add_index :characters, [:user_id, :created_at]
 end
