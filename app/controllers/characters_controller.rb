@@ -7,16 +7,17 @@ class CharactersController < ApplicationController
   end
 
   def create
-     @character = Character.new(character_params)
+     @character = current_user.characters.build(character_params)
      if  @character.save
        redirect_to @character 
      else
+        Rails.logger.info "render new layout"
         render 'new'
      end 
 
   end
   def show
-      @character.find(params[:id])
+      @character= Character.find(params[:id])
   end
 
   private 
