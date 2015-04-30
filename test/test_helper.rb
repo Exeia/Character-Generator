@@ -7,7 +7,6 @@ class ActiveSupport::TestCase
   fixtures :all
   def setup
       @user = users(:michael)
-	  remember(@user)
     
   end
   # Add more helper methods to be used by all tests here...
