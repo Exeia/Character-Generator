@@ -118,3 +118,38 @@ aside {
         color: $state-danger-text;
     }
 }
+
+
+.char_gen{
+    background-color:#e5c79b;
+
+}
+
+.create_character {
+      -webkit-border-radius: 28;
+        
+      -moz-border-radius: 28;
+          
+      border-radius: 28px;
+           width: auto; 
+      font-family: Arial;
+              
+      color: #ffffff;
+                
+      font-size: 12px;
+                  
+      background: #3498db;
+                    
+      padding: 10px 20px 10px 20px;
+      
+	  background-size: 50%;       
+      text-decoration: none;
+                  
+  }
+.create_character:hover {
+                        
+    background: #3cb0fd;
+                          
+    text-decoration: none;
+                      
+}

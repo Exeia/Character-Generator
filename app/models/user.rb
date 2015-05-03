@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
     has_many :characters
 
     def User.digest(string)
-        cost = BCrypt::Engine::MIN_COST 
+        cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
         BCrypt::Password.create(string, cost: cost)
         
     end

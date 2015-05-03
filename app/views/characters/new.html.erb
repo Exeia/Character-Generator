@@ -1,17 +1,19 @@
 <%provide(:title, 'New Character') %>
 
-<h1 text-align="center">New Character</h1> 
 
-<div class="row"> 
-    <div class="col-md-6">
+<div class="center row "> 
+<h1>New Character</h1> 
+    <div class="col-md-2 col-md-offset-5 char_gen">
         <%=form_for @character do |f|%>
+
+            <%= render 'shared/error_messages' %>
             <%= f.label :name, "Character Name" %>
             <%= f.text_field :name %>
 
             <%= f.label :job, "Select a Class: " %>
             <%= f.select :job, options_for_select([["Select one",""], "Rogue", "Mage", "Warrior", "Ranger"])%>
 
-            <%= f.submit "Create Character", class: "btn" %>
+            <%= f.submit "Create Character", class: "create_character" %>
 
         <% end %>
     </div>

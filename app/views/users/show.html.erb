@@ -5,7 +5,13 @@
 	<h1>   
        Welcome, <%= @user.handle %>
 </h1>
-<%= link_to "Create Character", characters_new_path(:user_id => @user.id) %> 
+
+
         </section>
     </aside>
 </div>
+<div class="character-table">
+    <table class="character-list"> 
+    </table>
+</div >
+<%= link_to "Create Character", characters_new_path(:user_id => @user.id) %> 
