@@ -13,6 +13,29 @@
             <%= f.label :job, "Select a Class: " %>
             <%= f.select :job, options_for_select([["Select one",""], "Rogue", "Mage", "Warrior", "Ranger"])%>
 
+            <div class="center stats" >
+
+            <%= f.label :str, "Strength:" %>
+            <%= f.number_field :str, :class => "center str",:value => @stats.rand(1..6),:min => 1,:max=> 6 %> 
+            
+            <%= f.label :dex, "Dexterity:" %>
+            <%= f.number_field :dex, :class => "center dex",:value => @stats.rand(1..6),:min => 1,:max=> 6 %> 
+
+
+            <%= f.label :dex, "Constitution:" %>
+            <%= f.number_field :con, :class => "center con",:value => @stats.rand(1..6),:min => 1,:max=> 6 %>
+            
+            <%= f.label :dex, "Intelligence:" %>
+            <%= f.number_field :intel, :class => "center int",:value => @stats.rand(1..6),:min => 1,:max=> 6 %>
+           
+            <%= f.label :wis, "Wisdom:" %>
+            <%= f.number_field :wis, :class => "center wis",:value => @stats.rand(1..6),:min => 1,:max=> 6 %>
+
+            <%= f.label :wis, "Charisma:" %>
+            <%= f.number_field :cha, :class => "center cha",:value => @stats.rand(1..6),:min => 1,:max=> 6 %>
+            </div>
+
+
             <%= f.submit "Create Character", class: "create_character" %>
 
         <% end %>

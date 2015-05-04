@@ -3,6 +3,7 @@ class CharactersController < ApplicationController
   
     def new
       @character = Character.new
+      @stats = Random.new 
 
   end
 
