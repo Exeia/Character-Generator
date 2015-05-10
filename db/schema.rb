@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150501053857) do
+ActiveRecord::Schema.define(version: 20150507064442) do
+
+  create_table "character_races", force: true do |t|
+    t.string   "name"
+    t.integer  "str"
+    t.integer  "dex"
+    t.integer  "con"
+    t.integer  "intel"
+    t.integer  "wis"
+    t.integer  "cha"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "characters", force: true do |t|
     t.string   "name"

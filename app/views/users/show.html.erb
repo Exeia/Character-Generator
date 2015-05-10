@@ -11,7 +11,19 @@
     </aside>
 </div>
 <div class="character-table">
+    <h4>Your Characters</h4>
     <table class="character-list"> 
+        <tr> 
+            <th class ="left-space"></th>
+            <th>Name </th>
+            <th>&nbsp; </th> 
+            <th>&nbsp; </th> 
+            <th>Class </th> 
+      </tr> 
+      <% @characters.each do |char| %>
+          <%= render partial: 'character_row', locals:{char:char} %>
+      <% end %> 
+
     </table>
 </div >
 <%= link_to "Create Character", characters_new_path(:user_id => @user.id) %> 
