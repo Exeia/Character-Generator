@@ -1,6 +1,14 @@
 <% name = @character.name %>
 <h1><%= name %></h1>
-
-<label>Class:</label><div class="job_name"><%= @character.job %> 
-
+<div class="stats"> 
+    <label>Class:</label><div class="job_name"><%= @character.job %> </div>
+     
+    <label>Race:</label><div class="job_name"></div>
+    <label> Strength:</label><div class="stat"><%= @character.str  %> </div>
+    <label> Dexerity:</label><div class="stat"><%= @character.dex  %> </div>
+    <label> Constitution:</label><div class="stat"><%= @character.con  %> </div>
+    <label> Wisdom:</label><div class="stat"><%= @character.wis  %> </div>
+    <label> Intelligence:</label><div class="stat"><%= @character.intel  %> </div>
+    <label> Charisma:</label><div class="stat"><%= @character.cha  %> </div>
+</div>
 

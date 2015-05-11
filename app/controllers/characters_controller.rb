@@ -18,6 +18,7 @@ class CharactersController < ApplicationController
 
   end
   def show
+      Rails.logger.info "#{params.inspect}"
       @character= Character.find(params[:id])
   end
 
