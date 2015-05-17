@@ -17,6 +17,8 @@ gem 'bootstrap-sass'
 gem 'sprockets'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+
+gem 'angularjs-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -37,5 +39,9 @@ gem 'spring',        group: :development
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+ gem 'debugger', group: [:development, :test]
+ gem 'paperclip', '~> 4.2' 
+ gem 'will_paginate', '~> 3.0.6'
+ gem 'devise'
+
 gem 'bcrypt'
