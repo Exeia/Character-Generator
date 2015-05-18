@@ -12,8 +12,12 @@
 
             <%= f.label :job, "Select a Class: " %>
             <%= f.select :job, options_for_select([["Select one",""], "Rogue", "Mage", "Warrior", "Ranger"])%>
+            <div class="center">
 
-            <div class="center stats" >
+            <%= f.label :race_id, "Race: "%>
+            <%= f.select :race_id, @race.collect {|c| [c.name,c.id]},{:include_blank =>true} %>
+            </div> 
+            <div class="center stats " >
 
             <%= f.label :str, "Strength:" %>
             <%= f.number_field :str, :class => "center str",:value => @stats.rand(1..6),:min => 1,:max=> 6 %> 

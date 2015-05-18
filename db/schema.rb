@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150507064442) do
+ActiveRecord::Schema.define(version: 20150518052225) do
 
   create_table "character_races", force: true do |t|
     t.string   "name"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20150507064442) do
     t.integer  "intel",      default: 0
     t.integer  "wis",        default: 0
     t.integer  "cha",        default: 0
+    t.integer  "race_id"
   end
 
   create_table "users", force: true do |t|
