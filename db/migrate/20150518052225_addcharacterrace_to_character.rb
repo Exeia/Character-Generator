@@ -1,5 +1,5 @@
 class AddcharacterraceToCharacter < ActiveRecord::Migration
   def change
-      add_column :characters, :race_id, :integer
+#      add_column :characters, :race_id, :integer
   end
 end
