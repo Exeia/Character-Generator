@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20150518052225) do
     t.integer  "intel",      default: 0
     t.integer  "wis",        default: 0
     t.integer  "cha",        default: 0
-    t.integer  "race_id"
+    t.string   "race_id"
   end
 
   create_table "users", force: true do |t|
